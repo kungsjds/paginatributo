@@ -1,0 +1,249 @@
+*  {
+    box-sizing: border-box;
+    font-family: 'Harry Potter';
+    transition: all 1s linear;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images/backgroundImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    width: 80%;
+    border-radius: 50px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: #efcb2f;
+    text-shadow: 0px 0px 20px #FFF;
+    font-size: 80px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1:hover {
+    text-shadow: 0px 0px 30px #FFF;
+    font-size: 90px;
+}
+
+.opacity {
+    background-color: rgba(26, 25, 25, 0.8);    
+}
+
+.container figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container figure figcaption {
+    color: #000;
+    text-align: center;
+    font-size: 30px;    
+    text-shadow: 0px 0px 20px #FFF;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;    
+}
+
+.article_resume {
+    text-shadow: 0px 0px 13px #FFF;
+}
+
+.article_resume {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.read_more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.read_more a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #efcb2f;
+    text-shadow: 0px 0px 13px #FFF;
+}
+
+.read_more a:hover {
+    font-size: 50px;
+    text-shadow: 0px 0px 20px #FFF;
+}
+
+#timeline {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;    
+}
+
+#galery_movies {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;    
+}
+
+.movies {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.movies img {
+    box-shadow: 0px 0px 7px #000;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.movies img:hover {
+    width: 425px;
+    height: 677px;
+}
+
+.title_article {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+    color: #efcb2f;
+    font-size: 40px;
+    text-shadow: 0px 0px 20px #FFF;
+}
+
+.title_movies {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+    color: #efcb2f;
+    font-size: 40px;
+    text-shadow: 0px 0px 20px #FFF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;    
+}
+
+footer label {
+    color: #efcb2f;
+    text-shadow: 0px 0px 3px #FFF;
+    padding: 5px;
+    font-size: 22px;
+    text-shadow: 0px 0px 10px #FFF;
+}
+
+footer address {
+    padding-top: 10px;
+}
+
+.title_timeline {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+    color: #efcb2f;
+    font-size: 40px;
+    text-shadow: 0px 0px 20px #FFF;
+}
+
+.container dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container dl ul li {
+    list-style: none;
+    background-color: rgba(252, 224, 65, 0.7);
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    text-shadow: 0px 0px 12px #FFF;
+    box-shadow: 0px 0px 5px #FFF;
+}
+
+dl ul li strong {
+    background-color: rgba(255, 4, 4, 0.7);
+    padding: 5px;
+    padding-bottom: 0px;
+    border-radius: 50px;
+    text-shadow: 0px 0px 12px #FFF;
+}
+
+@media (min-width: 1680px) {
+
+    .container {
+        width: 50%;
+    }
+
+    .read_more {
+        flex-direction: row;
+    }
+
+    #banner figure img {
+        width: 625px;
+        height: 810px;
+    }
+}
+
+@media (max-width: 790px) {
+    #banner figure img {
+        width: 425px;
+        height: 610px;
+    }
+}
+
+@media (max-width: 535px) {
+
+    .container {
+        width: 100%;
+    }
+
+    #banner figure img {
+        width: 325px;
+        height: 510px;
+    }
+}
+
+
